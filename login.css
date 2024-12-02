@@ -1,0 +1,75 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    /* Asegura que el body tenga altura completa */
+    background: linear-gradient(45deg, rgb(94, 7, 35) 30%, rgb(0, 0, 0) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background-color: rgba(230, 230, 230, 0.479);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 30px;
+    text-align: center;
+    width: 30em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* Campo de texto */
+#username,
+#password {
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    text-align: center;
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease;
+}
+
+#username:focus,
+#password:focus {
+    border-color: rgb(117, 0, 0);
+    outline: none;
+}
+
+/* Manejo de los label */
+#nmuser,
+#nmpass {
+    color: rgb(94, 7, 35);
+    font-size: larger;
+    font-weight: bold;
+    display: block;
+}
+
+button{
+    background-color: #5E0723;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    font-size: large;
+    font-weight: bold;
+    width: 5em;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+}
+
+img {
+    padding: 40px;
+    height: 75px;
+    width: 130px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
