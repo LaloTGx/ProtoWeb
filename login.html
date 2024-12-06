@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesiòn</title>
     <link rel="stylesheet" href="login.css">
-    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <img src="SII4.png"/>
-    
+    <img src="SII4.png" />
+
     <div class="login-container">
-        <h2>Iniciar sesión</h2>
+        <button class="help-button" onclick="openModal()">
+            <span class="fa-solid fa-circle-question"></span>
+        </button>
+        <div id="title">Iniciar sesión</div>
         <form action="home.html" method="get">
             <div class="input-group">
                 <label for="username" id="nmuser">Usuario</label> <br>
@@ -26,6 +29,32 @@
             <button type="submit">Entrar</button>
         </form>
     </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h1>Acceso al SIIA</h1>
+            <div class="subtitle">¿Cuál es mi usuario?</div>
+            Si eres estudiante tu usuario es tu matrícula. Sólo estudiantes, docentes y administrativos tienen cuenta en el SIIA.
+            <div class="subtitle">¿Olvidaste tu usuario?</div>
+            Dirígete con el secretario de tu Facultad o Unidad Académica para que te lo proporcione.
+            <div class="subtitle">¿Olvidaste tu contraseña?</div>
+            Dirígete con el secretario de tu Facultad o Unidad Académica para que te la cambie, o bien al área de Soporte del
+            Departamento de Sistemas y Tecnologías de la Información con una identificación con fotografía.
+            <div class="subtitle">Nota:</div>No se proporcionan usuarios ni se realiza cambio de contraseñas vía telefónica.<br>
+            <button class="close-button" onclick="closeModal()">Cerrar</button>
+        </div>
+    </div>
+
+    <script>
+        function openModal() {
+            document.getElementById('modal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+    </script>
 </body>
 
 </html>

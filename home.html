@@ -2,14 +2,54 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paginà Principal</title>
-    <link rel="stylesheet" href="home.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Principal</title>
+  <link rel="stylesheet" href="home.css">
 </head>
 
 <body>
-  <h1>Hola</h1>
-</body>
+
+  <nav class="navbar">
+    <ul>
+      <li id="logosiia">SIIA</li>
+      <li>
+        <a href="#servicios">Servicios Escolares</a>
+        <ul class="dropdown">
+          <li><a href="#">Comedor Universitario</a>
+            <ul class="subdrop">
+              <li><a href="sugerencias.html">Buzòn de quejas o Sugerencias</a></li>
+              <li><a href="Reservaciones.html">Reservaciones</a></li>            
+            </ul>
+          </li>
+          <li><a href="#">Eventos</a>
+            <ul class="subdrop">
+              <li><a href="eventos.html">Registro de eventos o imprimir constancias</a></li>
+            </ul>  
+          </li>
+          <li><a href="#">Ventanilla Virtual</a>
+            <ul class="subdrop">
+              <li><a href="quejas">Quejas o denuncias</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="login.html">Salir</a></li>
+    </ul>
+  </nav>
+
+   <div class="bdhome">
+    <img class="mailimg" src="mail.png"/>
+      <div class="mailcont">Ingresa a:
+    <a class="correo">https://login.microsoftonline.com/</a>
+    con tu correo:
+    <a class="correo">User@garzas.uatx.mx</a>
+    y tu misma contraseña del <a class="correo">SIIA</a>
+      </div>
+  </div>
+
+  <img class="supportimg" src="support.png" />
+
+  </body>
 
 </html>
