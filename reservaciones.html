@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservaciones</title>
+    <link rel="stylesheet" href="reservaciones.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li id="logosiia">SIIA</li>
+            <li><a href="home.html">Inicio <span class="fa-solid fa-house"></span></a></li>
+            <li>
+                <a href="#ServiciosEscolares">Servicios Escolares <span class="fa-solid fa-school"></span></a>
+                <ul class="dropdown">
+                    <li><a href="#ComedorUniversitario">Comedor Universitario</a>
+                        <ul class="subdrop">
+                            <li><a href="sugerencias.html">Buzòn de quejas o Sugerencias</a></li>
+                            <li><a href="#">Reservaciones</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#Eventos">Eventos</a>
+                        <ul class="subdrop">
+                            <li><a href="eventos.html">Registro de eventos o imprimir constancias</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#VentanillaVirtual">Ventanilla Virtual</a>
+                        <ul class="subdrop">
+                            <li><a href="quejas.html">Quejas o denuncias</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="login.html">Salir <span class="fa-solid fa-right-to-bracket"></span> </a></li>
+        </ul>
+    </nav>
+
+    <div class="ttpage">
+        Realizar reservaciòn
+    </div>
+
+    <div class="bdhome">
+            <div class="form-group-date">
+                <span class="fa-solid fa-calendar-days"></span>
+                <input type="date" id="fecha" name="fecha">
+            </div>
+            
+            <div class="form-group-hour">
+                <span class="fa-solid fa-clock"></span>
+                <input type="time" id="hora" name="hora">
+            </div>
+            <button type="submit">Guardar</button>
+    </div>
+
+</body>
+
+    <script>
+        function establecerFechaHoraActual() {
+            const fechaInput = document.getElementById("fecha");
+            const horaInput = document.getElementById("hora");
+
+            const fechaActual = new Date();
+            const anio = fechaActual.getFullYear();
+            const mes = String(fechaActual.getMonth() + 1).padStart(2, '0'); // Mes (0-11) + 1
+            const dia = String(fechaActual.getDate()).padStart(2, '0');
+
+            const horas = String(fechaActual.getHours()).padStart(2, '0');
+            const minutos = String(fechaActual.getMinutes()).padStart(2, '0');
+
+            fechaInput.value = `${anio}-${mes}-${dia}`;
+            horaInput.value = `${horas}:${minutos}`;
+        }
+
+        window.onload = establecerFechaHoraActual;
+    </script>
+
+</html>

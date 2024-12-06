@@ -42,16 +42,16 @@ ul li ul.dropdown li {
 }
 
 ul li ul.dropdown {
-        width: 100%;
-        background: rgba(94, 7, 35, 0.945);
-        position: absolute;
-        top: 100%;
-        left: 0;
-        z-index: 999;
-        display: none;
-        padding: 0;
-        box-sizing: border-box;
-        border-radius: 5px;
+    width: 100%;
+    background: rgba(94, 7, 35, 0.945);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 999;
+    display: none;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 5px;
 }
 
 ul li a:hover {
@@ -102,39 +102,64 @@ ul li ul.dropdown li ul.subdrop li a:hover {
     color: white;
     font-weight: bold;
     font-size: 25px;
-    margin-right: 70%;
+    margin-right: 60%;
 }
 
 /* -------------------------------------------------- */
 
-.bdhome {
+.ttpage {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    padding-top: 25px;
+
+}
+
+.bdhome{
+    margin-top: 120px;
     text-align: center;
 }
 
-.correo {
-    font-size: 20px;
-    position: relative;
+.form-group-date {
+    font-size: 100px;
     color: rgb(126, 32, 62);
-    font-weight: bold;
-}
-
-.mailimg {
-    padding-top: 100px;
-    border: none;
-    border-radius: 30px;
-    height: 220px;
-} 
-
-.mailcont {
-    position: relative;
-    padding: 30px;
-    bottom: 0;
-    font-size: 18px;
-}
-
-.supportimg {
+    padding: 0px;
+    left: 25%;
     position: absolute;
+}
+
+.form-group-hour {
+    font-size: 100px;
+    color: rgb(126, 32, 62);
+    padding: 0px;
+    right: 25%;
+    position: absolute;
+}
+
+#fecha {
+    padding: 5px;
+    font-size: 20px;
     border: none;
-    right: 10px;
-    bottom: 20px;
+    border-radius: 15px;
+    background-color: rgb(211, 211, 211);
+}
+
+#hora {
+    padding: 5px;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(211, 211, 211);
+}
+
+button {
+    background-color: rgb(94, 7, 35);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    font-size: large;
+    font-weight: bold;
+    width: 5em;
+    margin-top: 250px;
 }

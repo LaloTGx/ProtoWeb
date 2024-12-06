@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <link rel="stylesheet" href="tablas.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li id="logosiia">SIIA</li>
+            <li><a href="home.html">Inicio <span class="fa-solid fa-house"></span></a></li>
+            <li>
+                <a href="#ServiciosEscolares">Servicios Escolares <span class="fa-solid fa-school"></span></a>
+                <ul class="dropdown">
+                    <li><a href="#ComedorUniversitario">Comedor Universitario</a>
+                        <ul class="subdrop">
+                            <li><a href="sugerencias.html">Buzòn de quejas o Sugerencias</a></li>
+                            <li><a href="reservaciones.html">Reservaciones</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#Eventos">Eventos</a>
+                        <ul class="subdrop">
+                            <li><a href="#">Registro de eventos o imprimir constancias</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#VentanillaVirtual">Ventanilla Virtual</a>
+                        <ul class="subdrop">
+                            <li><a href="quejas.html">Quejas o denuncias</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="login.html">Salir <span class="fa-solid fa-right-to-bracket"></span> </a></li>
+        </ul>
+    </nav>
+
+    <div class="ttpage">
+        Registro de eventos / Imprimir constancias
+    </div>
+
+    <div class="bdhome">
+        <!-- Campo de búsqueda -->
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Busca en la tabla..." onkeyup="filtrarTabla()">
+        </div>
+
+        <!-- Dropdown -->
+        <div class="drpdwn">
+            <button>Mostrar registros</button>
+            <div class="drpdwn-content">
+                <button>10</button>
+                <button>20</button>
+                <button>30</button>
+            </div>
+        </div>
+
+        <!-- Tabla -->
+        <table>
+            <thead>
+                <tr>
+                    <th>ID Asistente</th>
+                    <th>Nombre del evento</th>
+                    <th>Fecha inicio</th>
+                    <th>Fecha fin</th>
+                    <th>Duracion horas</th>
+                    <th>Estado</th>
+                    <th>Imprimir constancia</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="7" style="text-align: center;">Ningún dato disponible en esta tabla</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
